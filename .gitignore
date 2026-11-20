@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+
+# Local runtime files (the app keeps its data in %APPDATA%\iTunesLibraryKeeper, but just in case)
+*.log
+config.json
+history.json
+ignored.json
+removed/
+
+# Build output
+.build-env/
+build/
+dist/
+*.spec

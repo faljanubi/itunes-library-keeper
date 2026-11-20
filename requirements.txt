@@ -1,0 +1,2 @@
+pywin32>=306
+PySide6-Essentials>=6.8

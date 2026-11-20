@@ -1,0 +1,24 @@
+title: iTunes Library Keeper
+description: Keeps iTunes for Windows in step with your music folders. Scan, review, then apply.
+remote_theme: just-the-docs/just-the-docs@v0.10.1
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+exclude:
+  - README.md
+color_scheme: dark
+search_enabled: true
+heading_anchors: true
+aux_links:
+  "GitHub": "https://github.com/faljanubi/itunes-library-keeper"
+  "Download": "https://github.com/faljanubi/itunes-library-keeper/releases/latest"
+aux_links_new_tab: true
+back_to_top: true
+back_to_top_text: "Back to top"
+footer_content: "iTunes Library Keeper © 2026 Faris Aljanubi, free software under the GNU GPL v3 or later. Not affiliated with Apple or klarita.net. iTunes is a trademark of Apple Inc."
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/faljanubi/itunes-library-keeper"
+gh_edit_branch: "main"
+gh_edit_source: docs
+gh_edit_view_mode: "edit"
