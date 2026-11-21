@@ -3,7 +3,7 @@
 A replacement for klarita.net's *iTunes Library Toolkit* with a review-first workflow.
 It keeps iTunes for Windows in step with the music folders on your disk.
 
-**Version 1.0.0** · Created by **Faris Aljanubi** · Licence: [GPL-3.0](LICENSE) · **[Documentation](https://faljanubi.github.io/itunes-library-keeper/)**
+**Version 1.0.1** · Created by **Faris Aljanubi** · Licence: [GPL-3.0](LICENSE) · **[Documentation](https://faljanubi.github.io/itunes-library-keeper/)**
 
 ![Overview page in light and dark mode](docs/screenshots/overview.png)
 

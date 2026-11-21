@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1 (2026-11-21)
+
+- Fixed: applying changes failed with "has no attribute 'MinorVersion'" (or 'CLSIDToClassMap') after a temp-file cleaner emptied the COM cache in %TEMP%\gen_py. The app now rebuilds that cache by itself.
+
 ## 1.0.0 (2026-11-20)
 
 First public release.

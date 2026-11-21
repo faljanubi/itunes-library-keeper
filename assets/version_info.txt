@@ -1,18 +1,18 @@
 # Windows version resource for the .exe (File > Properties > Details).
 # Keep in step with toolkit/version.py.
 VSVersionInfo(
-  ffi=FixedFileInfo(filevers=(1, 0, 0, 0), prodvers=(1, 0, 0, 0), mask=0x3f, flags=0x0, OS=0x40004,
+  ffi=FixedFileInfo(filevers=(1, 0, 1, 0), prodvers=(1, 0, 1, 0), mask=0x3f, flags=0x0, OS=0x40004,
                     fileType=0x1, subtype=0x0, date=(0, 0)),
   kids=[
     StringFileInfo([StringTable('040904B0', [
       StringStruct('CompanyName', 'Faris Aljanubi'),
       StringStruct('FileDescription', 'iTunes Library Keeper'),
-      StringStruct('FileVersion', '1.0.0'),
+      StringStruct('FileVersion', '1.0.1'),
       StringStruct('InternalName', 'iTunes Library Keeper'),
       StringStruct('LegalCopyright', '© 2026 Faris Aljanubi'),
       StringStruct('OriginalFilename', 'iTunes Library Keeper.exe'),
       StringStruct('ProductName', 'iTunes Library Keeper'),
-      StringStruct('ProductVersion', '1.0.0')])]),
+      StringStruct('ProductVersion', '1.0.1')])]),
     VarFileInfo([VarStruct('Translation', [0x0409, 1200])])
   ]
 )

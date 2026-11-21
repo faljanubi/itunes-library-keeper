@@ -1,6 +1,6 @@
 iTunes Library Keeper (portable)
 ================================
-Version 1.0.0 - created by Faris Aljanubi
+Version 1.0.1 - created by Faris Aljanubi
 
 This is the portable version: nothing to install, and it keeps its settings
 inside this folder, so the folder can be moved to another place, PC or USB

@@ -1,5 +1,5 @@
 """App identity. Bump VERSION for each release (and assets/version_info.txt for the .exe)."""
 APP_NAME = "iTunes Library Keeper"
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 AUTHOR = "Faris Aljanubi"
 SOURCE_URL = "https://github.com/faljanubi/itunes-library-keeper"
