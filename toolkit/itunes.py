@@ -3,6 +3,10 @@
 Every method must be called from the thread that called connect() (COM objects
 are apartment-bound); the JobRunner owns that thread.
 """
+import importlib
+import os
+import shutil
+import sys
 import time
 
 import pythoncom
@@ -19,6 +23,21 @@ SPECIAL_FOLDER = 4     # ITUserPlaylistSpecialKindFolder
 
 class ITunesError(Exception):
     pass
+
+
+def _reset_gen_cache():
+    """Delete pywin32's generated COM wrappers so EnsureDispatch rebuilds them."""
+    for name in [m for m in sys.modules if m.startswith("win32com.gen_py.")]:
+        del sys.modules[name]
+    path = gencache.GetGeneratePath()
+    for entry in os.listdir(path):
+        full = os.path.join(path, entry)
+        if os.path.isdir(full):
+            shutil.rmtree(full, ignore_errors=True)
+    gencache.clsidToTypelib.clear()
+    gencache.versionRedirectMap.clear()
+    gencache._SaveDicts()
+    importlib.invalidate_caches()
 
 
 def split_pid(pid):
@@ -49,9 +68,12 @@ class ITunes:
         pythoncom.CoInitialize()
         try:
             self.app = gencache.EnsureDispatch("iTunes.Application")
+        except pywintypes.com_error:
+            raise
         except Exception:
-            # stale/corrupt gen_py cache: rebuild once
-            gencache.Rebuild()
+            # stale/corrupt gen_py cache (e.g. a temp cleaner deleted its .py
+            # files): wipe it and regenerate once
+            _reset_gen_cache()
             self.app = gencache.EnsureDispatch("iTunes.Application")
         return self
 
